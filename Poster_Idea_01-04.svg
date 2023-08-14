@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 2160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6300ff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        opacity: .4;
+      }
+
+      .cls-2 {
+        fill: #ff8500;
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-9, .cls-10 {
+        font-size: 188px;
+      }
+
+      .cls-11 {
+        letter-spacing: .01em;
+      }
+
+      .cls-3 {
+        fill: #0c00ff;
+      }
+
+      .cls-12 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-13 {
+        font-size: 170px;
+      }
+
+      .cls-13, .cls-10 {
+        fill: #8c1996;
+      }
+
+      .cls-4 {
+        fill: #9500ff;
+      }
+
+      .cls-14 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-5 {
+        fill: #d300ff;
+      }
+
+      .cls-15 {
+        fill: #a50729;
+        opacity: .1;
+      }
+
+      .cls-6 {
+        fill: #5700ff;
+      }
+
+      .cls-16 {
+        font-family: CaviarDreams-Bold, 'Caviar Dreams';
+        font-weight: 700;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        fill: #b400ff;
+      }
+
+      .cls-18 {
+        letter-spacing: .35em;
+      }
+
+      .cls-19 {
+        letter-spacing: .05em;
+      }
+
+      .cls-20 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-21 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-22 {
+        fill: #80f;
+        opacity: .2;
+      }
+
+      .cls-23 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-24 {
+        letter-spacing: .4em;
+      }
+
+      .cls-8 {
+        fill: #5000ff;
+      }
+    </style>
+  </defs>
+  <rect x="-5.72" y="-13.41" width="1445.72" height="2173.41"/>
+  <g>
+    <polygon class="cls-6" points="1104.72 2017.35 38.04 1865.63 257.06 124 1323.74 275.72 1104.72 2017.35"/>
+    <polygon class="cls-3" points="1134.18 1967.66 60.34 1890.65 176.39 138.02 1250.23 215.03 1134.18 1967.66"/>
+    <polygon class="cls-7" points="1059.28 2056.44 9.39 1804.1 367.02 88.94 1416.92 341.28 1059.28 2056.44"/>
+    <polygon class="cls-22" points="1076.31 2053.04 23.29 1814.09 359.06 94.52 1412.08 333.46 1076.31 2053.04"/>
+    <polygon class="cls-8" points="1215.71 1975.68 140.36 1925.74 219.1 170.9 1294.44 220.85 1215.71 1975.68"/>
+    <polygon class="cls-2" points="1352.74 1866.91 284.62 2020.87 82.06 279.68 1150.18 125.72 1352.74 1866.91"/>
+    <polygon class="cls-5" points="1352.74 1866.91 284.62 2020.87 82.06 279.68 1150.18 125.72 1352.74 1866.91"/>
+    <polygon class="cls-5" points="1333.06 1885.09 261.73 2008.2 101.75 261.5 1173.08 138.39 1333.06 1885.09"/>
+    <polygon class="cls-4" points="1388.07 1831.71 327.88 2042.59 46.74 314.88 1106.92 104 1388.07 1831.71"/>
+    <polygon class="cls-15" points="1406.33 1808.88 351.17 2054.67 28.47 337.71 1083.64 91.92 1406.33 1808.88"/>
+    <polygon class="cls-1" points="1118.55 2005.56 56.23 1822.35 318.66 87.55 1380.97 270.77 1118.55 2005.56"/>
+  </g>
+  <image width="3185" height="1671" transform="translate(480.69 1545.38) scale(.15 .14)" xlink:href="Logo_01 (2)1.png"/>
+  <rect class="cls-12" x="173.23" y="239.2" width="1082.21" height="1662.96"/>
+  <text class="cls-16" transform="translate(350.29 609.02) scale(1.02 1)"><tspan class="cls-10"><tspan class="cls-24" x="0" y="0">I SE</tspan><tspan class="cls-17" x="621.54" y="0">E</tspan></tspan><tspan class="cls-9"><tspan class="cls-19" x="-1.78" y="195">CO</tspan><tspan class="cls-11" x="341.15" y="195">L</tspan><tspan class="cls-19" x="437.39" y="195">OR</tspan></tspan><tspan class="cls-13"><tspan class="cls-20" x="3.08" y="390">I</tspan><tspan class="cls-14" x="40.41" y="390"> </tspan><tspan class="cls-20" x="89.36" y="390">AM N</tspan><tspan class="cls-23" x="492.76" y="390">O</tspan><tspan class="cls-21" x="635.34" y="390">T</tspan></tspan><tspan class="cls-9"><tspan class="cls-18" x="-11.91" y="585">BLIN</tspan><tspan x="623.07" y="585">D</tspan></tspan></text>
+</svg>

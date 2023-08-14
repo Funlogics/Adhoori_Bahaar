@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 2160">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .47em;
+      }
+
+      .cls-2 {
+        font-size: 188.25px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #e8cd05;
+        font-size: 180.72px;
+        opacity: .73;
+      }
+
+      .cls-6 {
+        letter-spacing: .1em;
+      }
+
+      .cls-7 {
+        fill: #00ff8b;
+      }
+
+      .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        opacity: .73;
+      }
+
+      .cls-3 {
+        font-size: 186.77px;
+      }
+
+      .cls-8 {
+        fill: #a8ff00;
+      }
+
+      .cls-12 {
+        letter-spacing: .5em;
+      }
+
+      .cls-13 {
+        font-family: CaviarDreams-Bold, 'Caviar Dreams';
+        font-weight: 700;
+      }
+
+      .cls-14 {
+        letter-spacing: .05em;
+      }
+
+      .cls-9 {
+        fill: #e0ff00;
+      }
+
+      .cls-4 {
+        font-size: 219.31px;
+      }
+
+      .cls-15 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-10 {
+        fill: #ffec00;
+      }
+
+      .cls-16 {
+        fill: #efefef;
+      }
+
+      .cls-11 {
+        fill: #00ff12;
+      }
+
+      .cls-17 {
+        letter-spacing: .39em;
+      }
+
+      .cls-18 {
+        letter-spacing: .06em;
+      }
+
+      .cls-19 {
+        letter-spacing: .1em;
+      }
+
+      .cls-20 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-16" x="-6.85" y="-6.71" width="1445.72" height="2173.41"/>
+  <g>
+    <rect class="cls-10" x="123.49" y="183.96" width="1208.36" height="1821.83" transform="translate(87.53 -53.37) rotate(4.47)"/>
+    <rect class="cls-8" x="122.58" y="195.68" width="1208.36" height="1821.83" transform="translate(-79.18 56.26) rotate(-4.2)"/>
+    <rect class="cls-11" x="123.06" y="189.51" width="1208.36" height="1821.83" transform="translate(-60.5 42.47) rotate(-3.21)"/>
+    <rect class="cls-7" x="114.89" y="148.63" width="1208.36" height="1821.83" transform="translate(84.75 -52.81) rotate(4.47)"/>
+    <rect class="cls-9" x="109.67" y="189.51" width="1208.36" height="1821.83" transform="translate(145.04 -81.51) rotate(7.27)"/>
+    <rect class="cls-9" x="124.91" y="165.76" width="1208.36" height="1821.83" transform="translate(-9.94 6.8) rotate(-.53)"/>
+  </g>
+  <rect class="cls-15" x="175.9" y="245.9" width="1082.21" height="1662.96"/>
+  <text class="cls-13" transform="translate(274.07 616.26)"><tspan class="cls-3"><tspan class="cls-14" x="0" y="0">RAINB</tspan><tspan class="cls-20" x="555.39" y="0">O</tspan><tspan x="735.18" y="0">W</tspan></tspan><tspan class="cls-4"><tspan class="cls-12" x="10.03" y="203.31">H</tspan><tspan class="cls-1" x="249.04" y="203.31">A</tspan><tspan class="cls-12" x="500.15" y="203.31">V</tspan><tspan x="757.15" y="203.31">E</tspan></tspan><tspan class="cls-5"><tspan class="cls-17" x="32.94" y="392.49">SEVE</tspan><tspan x="736.25" y="392.49">N</tspan></tspan><tspan class="cls-2"><tspan class="cls-6" x=".42" y="581.68">CO</tspan><tspan class="cls-18" x="362.62" y="581.68">L</tspan><tspan class="cls-19" x="468.4" y="581.68">ORS</tspan></tspan></text>
+  <image width="3185" height="1671" transform="translate(443.93 1566.97) scale(.15 .14)" xlink:href="Logo_01 (2)1.png"/>
+</svg>
