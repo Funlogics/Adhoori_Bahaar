@@ -25,14 +25,30 @@
 
 
  
-    <header class="campaign-header  fade-in">
-        <img class="logo-navbar" src="/logo.jpg" alt="logo of website" srcset="">
-    </header>
+    <nav class="navbar-custom">
+
+        <img src="/logo.svg" alt="">
+
+        <button id="try-test" class="btn-primary-cta">Try Test</button>
+
+
+        <script type="text/javascript">
+
+            var try_test = document.getElementById("try-test")
+
+            try_test.onclick = function () {
+                location.href = "/steps.html"
+            };
+
+        </script>
+
+    </nav>
+
 
     <main class="main-container fade-in">
 
         <div class="d-flex mb-5">
-            <img src="/back_button.svg" id="back-btn" srcset="">
+            <img src="/back.svg" id="back-btn" srcset="">
         </div>
 
         <div class="container">

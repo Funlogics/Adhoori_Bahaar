@@ -21,55 +21,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="main-container mb-4">
+<body class="choose-test mb-4">
 
-    <header class="campaign-header fade-in">
-        <img class="logo-navbar" src="/logo.jpg" alt="logo of website" srcset="">
-    </header>
 
-    <main class="steps-container fade-in">
 
-        <div class="d-flex mb-5">
-            <img src="/back_button.svg" id="back_btn" srcset="">
+    <nav class="navbar-custom">
+
+        <img src="/logo.svg" alt="">
+
+        
+        <div class="btn-secondary-cta" id="back_btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <p>Back to Home</p>
+
         </div>
 
-        <div class="d-flex flex-column">
 
-            <h2>How old are you ?</h2>
 
-            <div class="d-flex">
+        <script type="text/javascript">
 
-                <div class="step">
-                    <h1>6-10</h1>
-                    <h5>Shapes</h5>
+            var back_btn = document.getElementById("back_btn")
+
+            back_btn.onclick = function () {
+                location.href = "/index.html"
+            };
+
+        </script>
+
+    </nav>
+
+
+    <main class="choose-test-type fade-in">
+
+
+
+
+
+        <div class="content">
+            <h2 class="section-heading text-center">Customize Your Test Experience</h2>
+            <h5 class="section-heading text-center">Tell us about your age. That will determine your test type.</h5>    
+        </div>
+
+        <div class="wrapper">
+
+            <div class="child" id="child1">
+                <div class="row1">
+                    <img src="/Shapes.svg" alt="">
                 </div>
-
-                <div class="step">
-                    <h1>10+</h1>
-                    <h5>Numbers</h5>
-                </div>
+                <h4>Shape Mode: Age (5-10 Years)</h4>
+                <p>This test is considered to detect vision deficiencies as early as 5 years old.</p>
             </div>
-
-            <button id="next-btn" class="btn-primary-cta mt-5">Next Step</button>
-
-
+            <div class="child" id="child2">
+                <div class="row1">
+                    <img src="/Number.svg" alt="">
+                </div>
+                <h4>Numbers Mode: Age (10 Years+)</h4>
+                <p>This test is considered to detect vision deficiencies in later stages after being older than 10
+                    years.</p>
+            </div>
         </div>
+
+
+        <button id="next-btn" class="btn-primary-cta mt-5">Continue</button>
 
 
         <script type="text/javascript">
             var next_button = document.getElementById("next-btn")
-            var step_2 = document.getElementById("step-2")
-            var step_3 = document.getElementById("step-3")
+            var child_1 = document.getElementById("child1")
+            var child_2 = document.getElementById("child2")
             var clickedTime = 0;
+
 
             next_button.onclick = function () {
                 if (clickedTime === 0) {
-                    step_2.style.cssText = "display:block"
-                    clickedTime++
+                    location.href = "/shape_steps.html"
                 }
                 else {
-                    step_3.style.cssText = "display:block"
+                    location.href = "/number_steps.html"    
                 }
+            };
+
+
+            child_1.onclick = function () {
+                child_1.style.cssText = "transition: 0.5s all;background: url(/card-picture.jpg), lightgray 50% / cover no-repeat; stroke:#fff;color:#fff;"
+                child_2.style.cssText = "transition: 0.5s all;background: white;"
+                clickedTime = 0;
+
+            };
+
+            child_2.onclick = function () {
+                child_2.style.cssText = "transition: 0.5s all;background: url(/card-picture.jpg), lightgray 50% / cover no-repeat; stroke:#fff;color:#fff;"
+                child_1.style.cssText = "transition: 0.5s all;background: white; "
+                clickedTime = 1;
             };
         </script>
 

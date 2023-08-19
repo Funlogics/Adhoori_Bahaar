@@ -60,7 +60,7 @@ h6 {
 }
 
 .btn-primary-cta {
-  display: flex;
+  width: auto;
   padding: 16px 36px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
@@ -86,6 +86,40 @@ h6 {
   transition: 0.5s all;
 }
 
+.btn-secondary-cta {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  border: 3px solid #fff;
+}
+
+.btn-secondary-cta p {
+  width: auto;
+  height: 8px;
+}
+
+.btn-secondary-cta:hover {
+  background: #fff;
+  fill: black !important;
+  color: #000;
+}
+
+.btn-secondary-cta svg path {
+  stroke: #fff;
+}
+
+.btn-secondary-cta:hover svg path {
+  stroke: #000;
+}
+
 .hero-section {
   display: flex;
   width: 1920px;
@@ -108,7 +142,8 @@ h6 {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  position:fixed;
+  position: fixed;
+  z-index: 10;
 }
 
 .hero-section .wrapper {
@@ -167,22 +202,23 @@ h6 {
   gap: 1rem;
   align-self: stretch;
 }
+
 .why-choose-us .wrapper .child {
   background: #fff;
   display: flex;
-  padding: 3rem 3.85rem;
+  padding: 3rem 1.5rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 2.5rem;
+  gap: 1.5rem;
   flex: 1 0 0;
   align-self: stretch;
   transition: 0.5s all;
-
 }
 .why-choose-us .wrapper .child:hover {
   transition: 0.5s all;
   background: url(/card-picture.jpg), lightgray 50% / cover no-repeat;
+  color: #fff;
 }
 
 .why-choose-us .wrapper .child .row1 {
@@ -219,12 +255,8 @@ h6 {
 }
 
 .steps-container {
-  width: 100vw;
-  background-color: #f3faff;
-  padding: 80px 48px;
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
-  border-radius: 15px;
 }
 .steps {
   display: flex;
@@ -277,11 +309,49 @@ h6 {
   margin-bottom: 5px;
 }
 
-/* Add more custom styles here if needed */
+.choose-test {
+  background-color: #000;
+  flex-direction: column;
+}
 
-/* Your previous styles here */
+.choose-test-type {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-self: stretch;
+  padding: 100px 75px;
+}
 
-/* Add animation to fade in elements */
+.choose-test-type .section-heading {
+  color: #fff;
+}
+
+.choose-test-type .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.choose-test-type .wrapper .child {
+  background: white;
+  display: flex;
+  padding: 3rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+  flex: 1 0 0;
+  align-self: stretch;
+  transition: 0.5s all;
+}
+.wrapper .child:hover {
+  transition: 0.5s all;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
