@@ -282,6 +282,25 @@
 
 
 
+        <div class="btn-secondary-cta" id="previous_btn">
+            <svg width="24" height="24" viewBox="0 0 62 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M55 34C56.1046 34 57 33.1046 57 32C57 30.8954 56.1046 30 55 30V34ZM5.58578 30.5858C4.80474 31.3668 4.80474 32.6332 5.58578 33.4142L18.3137 46.1421C19.0948 46.9232 20.3611 46.9232 21.1421 46.1421C21.9232 45.3611 21.9232 44.0948 21.1421 43.3137L9.82843 32L21.1421 20.6863C21.9232 19.9052 21.9232 18.6389 21.1421 17.8579C20.3611 17.0768 19.0948 17.0768 18.3137 17.8579L5.58578 30.5858ZM55 30L7 30V34L55 34V30Z"
+                    fill="white" />
+            </svg>
+      
+        </div>
+
+
+        <script type="text/javascript">
+
+            var previous_btn = document.getElementById("previous_btn")
+
+            previous_btn.onclick = function () {
+                location.href = "/chooseTestType.html"
+            };
+
+        </script>
 
 
         <div class="content">
@@ -301,7 +320,7 @@
                         </g>
                     </svg>
 
-                    <h2>01</h2>
+                    <h1>01</h1>
                 </div>
                 <h3>
                     Remove any glasses with colored lense
@@ -315,11 +334,12 @@
             <div class="child">
                 <div class="row1">
                     <!-- <img src="/shape1.svg" alt=""> -->
-                    <svg width="96" height="97" viewBox="0 0 96 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Shapes">
-                            <rect id="Rectangle 1" y="0.5" width="96" height="96" fill="black" />
+                            <circle id="Ellipse 1" cx="48.334" cy="48.5" r="48" fill="black" />
                         </g>
                     </svg>
+
 
                     <h1>02</h1>
                 </div>
@@ -333,67 +353,13 @@
         </div>
 
 
-        <button id="next-btn" class="btn-primary-cta mt-5">Continue</button>
-
-
-
+        <button id="next-btn" class="btn-primary-cta mt-5">Start my Test</button>
 
 
 
     </main>
 
 
-
-    <main class="main-container fade-in">
-
-        <div class="d-flex mb-5">
-            <img src="/back.svg" id="back-btn" srcset="">
-        </div>
-
-
-
-        <div class="container">
-            <h1 class="step-title">Preparation</h1>
-            <h5>Before you take the test:</h5>
-
-            <div class="d-flex my-5">
-                <div class="step">
-                    <h1>01</h1>
-                    <p>Remove any glasses with colored lenses: taking this test with only your prescription lenses or
-                        naked eye will provide you with the most accurate results. Wearing a colored lens can make your
-                        results inaccurate.</p>
-                </div>
-                <div class="step">
-                    <h1>02</h1>
-                    <p>Turn up your screen brightness: brighter colors are easier to perceive.</p>
-                </div>
-            </div>
-
-
-            <button id="next-btn" class="btn-primary-cta mt-5">Next Step</button>
-
-        </div>
-
-
-        <script type="text/javascript">
-
-            var next_button = document.getElementById("next-btn")
-            var back_button = document.getElementById("back-btn")
-
-
-            next_button.onclick = function () {
-                location.href = "/step_1.html"
-            };
-
-
-            back_button.click = function () {
-                location.href = "/index.html";
-            }
-
-
-        </script>
-
-    </main>
 
     <footer>
 

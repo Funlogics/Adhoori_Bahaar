@@ -12,6 +12,7 @@ body {
 }
 
 .main-container {
+  background: #000;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -95,6 +96,7 @@ h6 {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.85rem 1.25rem;
+  cursor: pointer;
   border-radius: 0.8rem;
   border: 3px solid #fff;
 }
@@ -116,6 +118,8 @@ h6 {
 
 .btn-secondary-cta:hover svg path {
   stroke: #000;
+  fill: #000;
+
 }
 
 .hero-section {
@@ -237,8 +241,9 @@ h6 {
   fill: #fff;
 }
 
-.why-choose-us .wrapper .child .row1 {
+.row1 {
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 2.5rem;
   align-self: stretch;
@@ -362,6 +367,7 @@ h6 {
   align-self: stretch;
   transition: 0.5s all;
 }
+
 .choose-test-type .wrapper .child:hover {
   transition: 0.5s all;
   border-radius: 15px;
