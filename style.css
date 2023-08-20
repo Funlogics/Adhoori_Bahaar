@@ -60,44 +60,42 @@ h6 {
 }
 
 .btn-primary-cta {
+  min-width: 8rem;
   width: auto;
-  padding: 16px 36px;
+  padding: .85rem 1.25rem;
   font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   align-items: flex-start;
-  gap: 48px;
-  border-radius: 8px;
+  gap: 1rem;
+  border-radius: 0.8rem;
   background: #fff;
   color: #000;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1rem;
   font-weight: 500;
   line-height: normal;
   transition: 0.5s all;
 }
 
 .btn-primary-cta:hover {
-  color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  color: #fff;
   background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%);
   transition: 0.5s all;
 }
 
 .btn-secondary-cta {
+  font-family: "Space Grotesk", sans-serif;
+  min-width: 8rem;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-
+  background: #000;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.75rem 1.25rem;
-  border-radius: 1rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.8rem;
   border: 3px solid #fff;
 }
 
@@ -128,7 +126,7 @@ h6 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: url(background.jpg);
+  background: url(background.jpg), lightgray 20% / contain no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -216,13 +214,27 @@ h6 {
   transition: 0.5s all;
 }
 .why-choose-us .wrapper .child:hover {
-  transition: 0.5s all;
-  background: url(/card-picture.jpg), lightgray 50% / cover no-repeat;
+  transition: 0.7s all;
+  background: url(/card-picture.jpg), black 0% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto;
+
   color: #fff;
 }
 
 .why-choose-us .wrapper .child:hover svg path {
   stroke: #fff;
+  fill: #fff;
+}
+
+.why-choose-us .wrapper .child:hover svg rect {
+  stroke: #fff;
+  fill: #fff;
+}
+
+.why-choose-us .wrapper .child:hover svg circle {
+  stroke: #fff;
+  fill: #fff;
 }
 
 .why-choose-us .wrapper .child .row1 {
@@ -350,10 +362,24 @@ h6 {
   align-self: stretch;
   transition: 0.5s all;
 }
-.wrapper .child:hover {
+.choose-test-type .wrapper .child:hover {
   transition: 0.5s all;
   border-radius: 15px;
   cursor: pointer;
+  scale: 1.05;
+}
+
+
+
+.child svg rect, .child svg circle {
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+/* Change the fill color on click */
+.child.clicked svg rect, .child.clicked svg circle , .child.clicked svg path {
+  fill: white;
+  
 }
 
 .fade-in {

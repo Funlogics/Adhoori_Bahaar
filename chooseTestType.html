@@ -286,13 +286,15 @@
 
 
         <div class="content">
-            <h2 class="section-heading text-center">Customize Your Test Experience</h2>
+            <h2 class="section-heading text-center">Choose Your Age Group</h2>
             <h5 class="section-heading text-center">Tell us about your age. That will determine your test type.</h5>
         </div>
 
         <div class="wrapper">
 
-            <div class="child" id="child1">
+            <div class="child" id="child_1">
+                <h4>Shape Mode: Age (5-10 Years)</h4>
+
                 <div class="row1">
                     <svg width="343" height="96" viewBox="0 0 343 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="96" height="96" fill="black" />
@@ -300,14 +302,26 @@
                         <path d="M287.426 0L342.851 96H232L287.426 0Z" fill="black" />
                     </svg>
                 </div>
-                <h4>Shape Mode: Age (5-10 Years)</h4>
                 <p>This test is considered to detect vision deficiencies as early as 5 years old.</p>
             </div>
-            <div class="child" id="child2">
-                <div class="row1">
-                    <img src="/Number.svg" alt="">
-                </div>
+            <div class="child" id="child_2">
                 <h4>Numbers Mode: Age (10 Years+)</h4>
+
+
+                <div class="row1">
+
+                    <svg width="233" height="96" viewBox="0 0 233 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.7371 96V12.8914H31.2686L18.3771 43.3371H0L19.6114 0H51.2914V96H33.7371Z"
+                            fill="black" />
+                        <path
+                            d="M71.291 96V84.7059C71.291 78.1625 72.3666 72.7395 74.5179 68.437C76.6692 64.0448 79.7616 60.4594 83.7952 57.6807C87.9185 54.8123 92.9381 52.4818 98.854 50.6891L107.862 47.8656C111.179 46.7899 113.958 45.4902 116.199 43.9664C118.439 42.3529 120.143 40.4258 121.308 38.1849C122.563 35.944 123.19 33.3894 123.19 30.521V29.9832C123.19 25.5014 121.666 21.9608 118.619 19.3613C115.571 16.6723 111.403 15.3277 106.115 15.3277C100.916 15.3277 96.7028 16.7619 93.4759 19.6303C90.3386 22.409 88.77 26.4426 88.77 31.7311V34.1513H71.5599V32C71.5599 25.1877 73.0837 19.4062 76.1314 14.6555C79.179 9.90476 83.3022 6.27451 88.5011 3.76471C93.7896 1.2549 99.6608 0 106.115 0C112.568 0 118.395 1.2549 123.594 3.76471C128.792 6.18487 132.871 9.63586 135.829 14.1176C138.876 18.5098 140.4 23.7087 140.4 29.7143V31.0588C140.4 37.0644 139.145 42.1737 136.636 46.3866C134.215 50.5098 130.899 53.916 126.686 56.605C122.473 59.2045 117.678 61.3557 112.299 63.0588L103.694 65.7479C99.84 66.9132 96.8372 68.2129 94.686 69.6471C92.5347 70.9916 91.0109 72.5154 90.1145 74.2185C89.3078 75.8319 88.9045 77.8039 88.9045 80.1345V80.6723H139.594V96H71.291Z"
+                            fill="black" />
+                        <path
+                            d="M196.703 96C189.622 96 183.347 94.7451 177.879 92.2353C172.412 89.7255 168.109 86.1401 164.972 81.479C161.924 76.7283 160.4 71.1261 160.4 64.6723V62.2521H177.61V64.1345C177.61 69.1541 179.358 73.1877 182.854 76.2353C186.35 79.1933 190.966 80.6723 196.703 80.6723C202.529 80.6723 207.011 79.2829 210.148 76.5042C213.375 73.7255 214.989 70.2297 214.989 66.0168V64.6723C214.989 61.8039 214.272 59.4734 212.837 57.6807C211.403 55.888 209.476 54.5882 207.056 53.7815C204.636 52.8852 201.902 52.437 198.854 52.437H180.031V33.6134L210.417 17.479V15.3277H162.821V0H229.51V22.8571L201.14 37.916V40.0672H206.115C210.328 40.0672 214.406 40.9188 218.35 42.6218C222.384 44.3249 225.7 46.9692 228.3 50.5546C230.899 54.0504 232.199 58.6218 232.199 64.2689V65.8824C232.199 71.9776 230.72 77.3109 227.762 81.8824C224.804 86.3642 220.636 89.8599 215.258 92.3698C209.969 94.7899 203.784 96 196.703 96Z"
+                            fill="black" />
+                    </svg>
+
+                </div>
                 <p>This test is considered to detect vision deficiencies in later stages after being older than 10
                     years.</p>
             </div>
@@ -317,36 +331,44 @@
         <button id="next-btn" class="btn-primary-cta mt-5">Continue</button>
 
 
-        <script type="text/javascript">
-            var next_button = document.getElementById("next-btn")
-            var child_1 = document.getElementById("child1")
-            var child_2 = document.getElementById("child2")
-            var clickedTime = 0;
+        <script>
+            var next_button = document.getElementById("next-btn");
+            var child1 = document.getElementById('child_1');
+            var child2 = document.getElementById('child_2');            
+            var clickedTime = -1;
 
 
             next_button.onclick = function () {
                 if (clickedTime === 0) {
-                    location.href = "/shape_steps.html"
+                    location.href = "/shape_steps.html";
+                } else {
+                    location.href = "/number_steps.html";
                 }
-                else {
-                    location.href = "/number_steps.html"
-                }
             };
 
 
-            child_1.onclick = function () {
-                child_1.style.cssText = "transition: 0.5s all;background: url(/card-picture.jpg), lightgray 50% / cover no-repeat; stroke:#fff;color:#fff;"
-                child_2.style.cssText = "transition: 0.5s all;background: white;"
-                clickedTime = 0;
 
-            };
+            child1.onclick = function () {
+                child1.classList.toggle('clicked')
+                child1.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
+                child2.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
+                child2.classList.remove('clicked')
+                clickedTime = 0 
+            }
 
-            child_2.onclick = function () {
-                child_2.style.cssText = "transition: 0.5s all;background: url(/card-picture.jpg), lightgray 50% / cover no-repeat; stroke:#fff;color:#fff;"
-                child_1.style.cssText = "transition: 0.5s all;background: white; "
-                clickedTime = 1;
-            };
+            child2.onclick = function () {
+                child2.classList.toggle('clicked')
+                child2.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
+                child1.classList.remove('clicked')
+                child1.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
+                clickedTime = 1 
+            }
+
+
         </script>
+
+
+
 
 
     </main>
