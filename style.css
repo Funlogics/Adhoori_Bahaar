@@ -60,7 +60,7 @@ h6 {
   font-size: 1.125rem;
 }
 
-a{
+a {
   text-align: center;
   text-decoration: none;
 }
@@ -68,7 +68,7 @@ a{
 .btn-primary-cta {
   min-width: 8rem;
   width: auto;
-  padding: .85rem 1.25rem;
+  padding: 0.85rem 1.25rem;
   font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   align-items: flex-start;
@@ -91,7 +91,7 @@ a{
 .btn-secondary-cta {
   font-family: "Space Grotesk", sans-serif;
   min-width: 8rem;
-  
+
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -261,7 +261,7 @@ a{
 }
 .why-choose-us .wrapper .child:hover {
   transition: 0.7s all;
-  background: url(/card-picture.jpg) , black 0%;
+  background: url(/card-picture.jpg), black 0%;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: auto;
@@ -418,28 +418,28 @@ a{
   scale: 1.05;
 }
 
-
-
-.child svg rect, .child svg circle {
+.child svg rect,
+.child svg circle {
   fill: black;
   transition: fill 0.3s ease;
 }
 
 /* Change the fill color on click */
-.child.clicked svg rect, .child.clicked svg circle , .child.clicked svg path {
+.child.clicked svg rect,
+.child.clicked svg circle,
+.child.clicked svg path {
   fill: white;
-  
 }
 
-
-.number_steps .wrapper .child, .shape_steps .wrapper .child {
+.number_steps .wrapper .child,
+.shape_steps .wrapper .child {
   transition: 0.7s all;
   background: #fff;
   color: #000;
 }
 
-
-.number_steps .wrapper .child:hover, .shape_steps .wrapper .child:hover {
+.number_steps .wrapper .child:hover,
+.shape_steps .wrapper .child:hover {
   transition: 0.7s all;
   background: url(/card-picture.jpg);
   background-size: cover;
@@ -447,9 +447,8 @@ a{
   color: #fff;
 }
 
-
-
-.shape_steps .wrapper .child:hover svg rect, .shape_steps .wrapper .child:hover svg circle{
+.shape_steps .wrapper .child:hover svg rect,
+.shape_steps .wrapper .child:hover svg circle {
   fill: #fff;
 }
 
@@ -458,6 +457,139 @@ a{
   transform: translateY(40px);
   animation: fade-in-animation 1s ease forwards;
 }
+
+.Shapequiz {
+  color: #fff;
+  display: flex;
+  padding: 8rem 0rem 5rem 0rem;
+  gap: 0rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.Shapequiz .ScoreQuestion {
+  display: flex;
+  padding: 0rem 4.6875rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Shapequiz .ScoreQuestion .Score {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.Shapequiz .ScoreQuestion .Question {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.Shapequiz .ScoreQuestion .Question .Remaining {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+
+.Shapequiz .QuestionContainer {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Shapequiz .QuestionContainer .ImgQuestion {
+  width: 456px;
+  height: 456px;
+  padding: 1rem;
+}
+
+.Shapequiz .AnswerContainer {
+  display: flex;
+  padding: 0rem 8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.Shapequiz .AnswerContainer .option {
+  display: flex;
+  width: 15%;
+  padding: 0.75rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.Shapequiz .AnswerContainer .option svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.Shapequiz .AnswerContainer .option:hover {
+  background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%);
+}
+
+.Shapequiz .AnswerContainer .option:hover svg circle, .Shapequiz .AnswerContainer .option:hover svg rect, .Shapequiz .AnswerContainer .option:hover svg path {
+  fill: #fff;
+}
+
+.Shapequiz .WrapperContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+
+
+
+/* Existing styles ... */
+
+/* Modal styles */
+.modal {
+  color: #000;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ... Existing styles ... */
+
 
 @keyframes fade-in-animation {
   to {
@@ -493,4 +625,3 @@ a{
 .step li {
   animation-delay: 0.5s; /* Delay to stagger the animation */
 }
-

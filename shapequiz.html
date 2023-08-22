@@ -254,31 +254,208 @@
         </svg>
 
 
-
-        <a class="btn-secondary-cta" id="back_btn">
+        <a class="btn-secondary-cta" href="index.html">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008"
                     stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
-            <p>Back to Home</p>
+            <p>End Test</p>
 
         </a>
 
 
-
-        <script type="text/javascript">
-
-            var back_btn = document.getElementById("back_btn")
-
-            back_btn.onclick = function () {
-                location.href = "/index.html"
-            };
-
-        </script>
     </nav>
 
 
+    <main class="Shapequiz">
+        <div class="ScoreQuestion">
+            <div class="Score">
+                <h5>Score</h5>
+                <h5 id="score">0</h5>
+            </div>
+            <div class="Question">
+                <h5>Question</h5>
+                <div class="Remaining">
+                    <h5 id="done">0</h5>
+                    <h5>/</h5>
+                    <h5 id="total">12</h5>
+                </div>
+            </div>
+        </div>
+        <div class="QuestionContainer">
+            <h2>What do you see !!</h2>
+            <img src="Images/Shapes/Circle/1.jpg" alt="" class="ImgQuestion" id="questionimg">
+        </div>
+        <div class="WrapperContainer">
+            <div class="AnswerContainer">
+                <h5>Choose Your Option</h5>
+            </div>
+            <div class="AnswerContainer">
+                <button class="option">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                        <rect x="0.333984" width="48" height="48" fill="black" />
+                    </svg>
+                </button>
+                <button class="option">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="24" fill="black" />
+                    </svg>
+                </button>
+                <button class="option">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                        <path d="M24.668 0L48.668 48H0.667969L24.668 0Z" fill="black" />
+                    </svg>
+                </button>
+
+            </div>
+            <a id="next-button" class="btn-secondary-cta">Next</a>
+
+        </div>
+        <div class="modal" id="resultModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Quiz Result</h2>
+                <p id="modalScore"></p>
+
+
+            </div>
+        </div>
+
+
+        <script>
+            const options = document.querySelectorAll('.option');
+            const scoreDisplay = document.getElementById('score');
+            const questionNumberDisplay = document.getElementById('done');
+            const totalDisplay = document.getElementById('total');
+            const questionImage = document.getElementById('questionimg');
+            const nextButton = document.getElementById('next-button');
+            const resultModal = document.getElementById('resultModal');
+            const modalScore = document.getElementById('modalScore');
+            const closeModal = document.getElementById('closeModal');
+
+            let currentQuestion = 0;
+            let score = 0;
+            const shuffledQuestions = shuffleArray([
+                { image: 'Images/Shapes/Circle/1.jpg', correctOption: 2 },
+                { image: 'Images/Shapes/Square/2.jpg', correctOption: 1 },
+                { image: 'Images/Shapes/Triangle/3.jpg', correctOption: 3 },
+                { image: 'Images/Shapes/Circle/3.jpg', correctOption: 2 },
+                { image: 'Images/Shapes/Square/2.jpg', correctOption: 1 },
+                { image: 'Images/Shapes/Triangle/1.jpg', correctOption: 3 },
+                { image: 'Images/Shapes/Circle/1.jpg', correctOption: 2 },
+                { image: 'Images/Shapes/Square/4.jpg', correctOption: 1 },
+                { image: 'Images/Shapes/Circle/5.jpg', correctOption: 2 },
+                { image: 'Images/Shapes/Triangle/1.jpg', correctOption: 3 },
+                { image: 'Images/Shapes/Circle/4.jpg', correctOption: 2 },
+                { image: 'Images/Shapes/Square/3.jpg', correctOption: 1 }
+            ]);
+
+            totalDisplay.textContent = shuffledQuestions.length;
+
+            function resetQuestionDisplay() {
+                questionNumberDisplay.textContent = '';
+                questionImage.src = '';
+                options.forEach(option => {
+                    //  option.textContent = '';
+                    //  option.style.backgroundImage = 'none';
+                    option.removeEventListener('click', checkAnswer);
+                });
+                nextButton.style.display = 'none';
+            }
+
+            function loadQuestion() {
+                resetQuestionDisplay();
+
+                if (currentQuestion >= shuffledQuestions.length) {
+                    console.log('Quiz has ended.');
+                    return;
+                }
+
+                const question = shuffledQuestions[currentQuestion];
+                if (question.answered) {
+                    console.log("shuffled question was answered.")
+                    currentQuestion++;
+                    loadQuestion();
+                    return;
+                }
+
+                questionNumberDisplay.textContent = currentQuestion + 1; // Display question number
+                questionImage.src = question.image;
+
+                options.forEach((option, index) => {
+                    //  option.style.backgroundImage = `url(${getIconUrl(index)})`; // Set option icon
+             
+                    option.addEventListener('click', () => checkAnswer(index));
+                });
+
+                console.log(`Question ${currentQuestion + 1} loaded.`);
+            }
+
+
+            function getIconUrl(index) {
+                // Return the URL of the icon based on the index
+                // Example: return `icon${index}.png`;
+            }
+
+            function checkAnswer(selectedIndex) {
+                if (currentQuestion >= shuffledQuestions.length) {
+                    console.log('Quiz has ended.');
+                    return;
+                }
+
+                const question = shuffledQuestions[currentQuestion];
+                if (question.answered) {
+                    console.log('Question already answered.');
+                    return;
+                }
+
+                if (selectedIndex === question.correctOption - 1) {
+                    score++;
+                    scoreDisplay.textContent = score;
+                    console.log(`Correct answer! Score: ${score}`);
+                } else {
+                    console.log(`Wrong answer. Score: ${score}`);
+                }
+
+                question.answered = true;
+                currentQuestion++;
+                loadQuestion();
+            }
+
+            function showResult() {
+                questionImage.style.display = 'none';
+                options.forEach(option => option.style.display = 'none');
+
+                modalScore.textContent = `Total Score: ${score} / ${shuffledQuestions.length}`;
+                resultModal.style.display = 'block';
+
+                closeModal.addEventListener('click', () => {
+                    resultModal.style.display = 'none';
+                });
+
+                console.log('Quiz finished. Final Score:', score);
+            }
+
+            nextButton.addEventListener('click', () => {
+                if (currentQuestion < shuffledQuestions.length) {
+                    loadQuestion();
+                }
+            });
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            loadQuestion();
+
+        </script>
+
+    </main>
 
 
     <footer>
