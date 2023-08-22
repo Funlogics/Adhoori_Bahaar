@@ -681,6 +681,16 @@ a {
   gap: 2rem;
 }
 
+footer {
+  display: flex;
+  padding: 2rem 4.6875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
 @media (max-width: 768px) {
   /* Add your responsive styles here */
 }
@@ -921,34 +931,43 @@ a {
     color: #fff;
     padding: 2rem 1rem;
   }
-  
+
   .about_us .left-aside {
     display: flex;
-    width: 50%;
-    gap: 4rem;
+    width: 100%;
+    gap: 3rem;
     flex-direction: column;
     justify-content: space-between;
   }
   .about_us .left-aside .heading-wrapper {
-    gap: 2rem;
+    gap: 1.5rem;
   }
-  
+
   .about_us .left-aside .description {
-    gap: 1.35rem;
+    gap: 1.25rem;
   }
-  
+
   .about_us .left-aside .description p {
-    font-size: 20px;
+    font-size: 16px;
   }
-  
+
   .about_us .right-aside {
-    width: 50%;
+    width: 100%;
     background: url(logo1_without_shadow.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
-  
+
+  footer {
+    display: flex;
+    padding: 2rem 4.6875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
 }
 
 /* Styles for screens with a minimum width of 1200px */
