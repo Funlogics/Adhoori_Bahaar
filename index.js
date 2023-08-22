@@ -5,7 +5,7 @@ var home_Btn = document.getElementById("homeBtn");
 if(try_test){
 
     try_test.addEventListener("click", () => {     
-        try_test.href = "/chooseTestType.html";
+        try_test.href = "/choose.html";
      });
 }
 
