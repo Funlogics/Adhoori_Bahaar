@@ -261,7 +261,8 @@ a{
 }
 .why-choose-us .wrapper .child:hover {
   transition: 0.7s all;
-  background: url(/card-picture.jpg) , black 0% / cover no-repeat;
+  background: url(/card-picture.jpg) , black 0%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: auto;
 
