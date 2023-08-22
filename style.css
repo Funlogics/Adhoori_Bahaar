@@ -166,7 +166,7 @@ h6 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: url(background.jpg), lightgray 20% / contain no-repeat;
+  background: url(background.jpg), lightgray 20% / cover no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -256,7 +256,7 @@ h6 {
 }
 .why-choose-us .wrapper .child:hover {
   transition: 0.7s all;
-  background: url(/card-picture.jpg), black 0% / cover no-repeat;
+  background: url(/card-picture.jpg) , black 0% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -425,6 +425,28 @@ h6 {
   
 }
 
+
+.number_steps .wrapper .child, .shape_steps .wrapper .child {
+  transition: 0.7s all;
+  background: #fff;
+  color: #000;
+}
+
+
+.number_steps .wrapper .child:hover, .shape_steps .wrapper .child:hover {
+  transition: 0.7s all;
+  background: url(/card-picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+
+
+.shape_steps .wrapper .child:hover svg rect, .shape_steps .wrapper .child:hover svg circle{
+  fill: #fff;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
@@ -466,4 +488,3 @@ h6 {
   animation-delay: 0.5s; /* Delay to stagger the animation */
 }
 
-/* Rest of your styles */
