@@ -282,11 +282,12 @@
 
         <div class="wrapper">
 
-            <div class="child" id="child_1">
+            <div class="child" id="chooseChild1">
                 <h4>Shape Mode: Age (5-10 Years)</h4>
 
                 <div class="row1">
-                    <svg width="343" height="96" viewBox="0 0 343 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="343" height="96" 
+                    viewBox="0 0 343 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="96" height="96" fill="black" />
                         <circle cx="164" cy="48" r="48" fill="black" />
                         <path d="M287.426 0L342.851 96H232L287.426 0Z" fill="black" />
@@ -294,7 +295,7 @@
                 </div>
                 <p>This test is considered to detect vision deficiencies as early as 5 years old.</p>
             </div>
-            <div class="child" id="child_2">
+            <div class="child" id="chooseChild2">
                 <h4>Numbers Mode: Age (10 Years+)</h4>
 
 
@@ -318,34 +319,34 @@
         </div>
 
 
-        <a id="next-btn" class="btn-primary-cta mt-5">Continue</a>
+        <a id="choosePageNextBtn" class="btn-primary-cta mt-5">Continue</a>
 
 
         <script>
             
-            var next_button = document.getElementById("next-btn");
-            var child1 = document.getElementById('child_1');
-            var child2 = document.getElementById('child_2');
+            var choosePageNextBtn = document.getElementById("choosePageNextBtn");
+            var chooseChild1 = document.getElementById('chooseChild1');
+            var chooseChild2 = document.getElementById('chooseChild2');
             var clickedTime = -1;
 
 
 
-            child1.onclick = function () {
-                child1.classList.toggle('clicked')
-                child1.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
-                child2.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
-                child2.classList.remove('clicked')
+            chooseChild1.onclick = function () {
+                chooseChild1.classList.toggle('clicked')
+                chooseChild1.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
+                chooseChild2.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
+                chooseChild2.classList.remove('clicked')
                 clickedTime = 0
-                next_button.href = "shapetest.html"
+                choosePageNextBtn.href = "shapetest.html"
             }
 
-            child2.onclick = function () {
-                child2.classList.toggle('clicked')
-                child2.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
-                child1.classList.remove('clicked')
-                child1.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
+            chooseChild2.onclick = function () {
+                chooseChild2.classList.toggle('clicked')
+                chooseChild2.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
+                chooseChild1.classList.remove('clicked')
+                chooseChild1.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
                 clickedTime = 1
-                next_button.href = "numbertest.html"
+                choosePageNextBtn.href = "numbertest.html"
 
             }
 

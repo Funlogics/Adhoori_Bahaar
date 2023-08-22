@@ -2,6 +2,9 @@
 var try_test = document.getElementById("try-test");
 var home_Btn = document.getElementById("homeBtn");
 
+
+
+
 if(try_test){
 
     try_test.addEventListener("click", () => {     
@@ -14,3 +17,7 @@ if(home_Btn){
         home_Btn.href = "/index.html"
     });
 }
+
+
+
+var numberBackBtn = document.getElementById("back_btn")
