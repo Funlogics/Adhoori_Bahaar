@@ -682,6 +682,7 @@ a {
 }
 
 footer {
+  border-top: 3px solid #fff;
   display: flex;
   padding: 2rem 4.6875rem;
   flex-direction: column;
@@ -689,8 +690,18 @@ footer {
   align-items: center;
   gap: 1.5rem;
   align-self: stretch;
+  background: #000;
+  color: #fff;
 }
 
+footer .social{
+  display: flex;
+  gap:2.5rem;
+}
+
+footer .social svg:hover path, footer .social svg:hover circle,footer .social svg:hover rect {
+  stroke:  #fcc605 100%;
+} 
 @media (max-width: 768px) {
   /* Add your responsive styles here */
 }
@@ -961,13 +972,18 @@ footer {
 
   footer {
     display: flex;
-    padding: 2rem 4.6875rem;
+    padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
     align-self: stretch;
   }
+
+  footer img{
+    width: 50%;
+  }
+
 }
 
 /* Styles for screens with a minimum width of 1200px */
