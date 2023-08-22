@@ -60,6 +60,11 @@ h6 {
   font-size: 1.125rem;
 }
 
+a{
+  text-align: center;
+  text-decoration: none;
+}
+
 .btn-primary-cta {
   min-width: 8rem;
   width: auto;
