@@ -1,6 +1,16 @@
 
-var try_test = document.getElementById("try-test")
+var try_test = document.getElementById("try-test");
+var home_Btn = document.getElementById("homeBtn");
 
-try_test.addEventListener('click',function(){ 
-    try_test.href = "/chooseTestType.html"
-})
+if(try_test){
+
+    try_test.addEventListener("click", () => {     
+        try_test.href = "/chooseTestType.html";
+     });
+}
+
+if(home_Btn){
+    home_Btn.addEventListener('click',function(){ 
+        home_Btn.href = "/index.html"
+    });
+}

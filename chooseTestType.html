@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    
+    <script src="index.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -254,7 +256,8 @@
 
 
 
-        <a class="btn-secondary-cta" id="back_btn">
+        <a class="btn-secondary-cta" id="homeBtn">
+         
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008"
                     stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
@@ -265,16 +268,6 @@
         </a>
 
 
-
-        <script type="text/javascript">
-
-            var back_btn = document.getElementById("back_btn")
-
-            back_btn.onclick = function () {
-                location.href = "/index.html"
-            };
-
-        </script>
 
     </nav>
 
@@ -329,9 +322,10 @@
 
 
         <script>
+            
             var next_button = document.getElementById("next-btn");
             var child1 = document.getElementById('child_1');
-            var child2 = document.getElementById('child_2');            
+            var child2 = document.getElementById('child_2');
             var clickedTime = -1;
 
 
@@ -341,7 +335,7 @@
                 child1.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
                 child2.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
                 child2.classList.remove('clicked')
-                clickedTime = 0 
+                clickedTime = 0
                 next_button.href = "/shape_steps.html"
             }
 
@@ -350,7 +344,7 @@
                 child2.style.cssText = "transition: 0.5s all;background: linear-gradient(90deg, #fcc605 0%, #fd0a23 100%); color:#fff; box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;";
                 child1.classList.remove('clicked')
                 child1.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
-                clickedTime = 1 
+                clickedTime = 1
                 next_button.href = "/number_steps.html"
 
             }
