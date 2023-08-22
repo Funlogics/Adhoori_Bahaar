@@ -356,8 +356,6 @@
             questionNumberDisplay.textContent = '';
             questionImage.src = '';
             options.forEach(option => {
-                //  option.textContent = '';
-                //  option.style.backgroundImage = 'none';
                 option.removeEventListener('click', checkAnswer);
             });
             nextButton.style.display = 'none';
@@ -368,6 +366,7 @@
 
             if (currentQuestion >= shuffledQuestions.length) {
                 console.log('Quiz has ended.');
+                showResult()
                 return;
             }
 
@@ -402,6 +401,7 @@
             if (currentQuestion >= shuffledQuestions.length) {
                 console.log('Quiz has ended.');
                 questionNumberDisplay.textContent = currentQuestion
+                showResult()
                 return;
             }
 
@@ -419,7 +419,7 @@
                 console.log(`Wrong answer. Score: ${score}`);
             }
 
-            selectedIndex = null
+    
             question.answered = true;
             currentQuestion++;
             loadQuestion();

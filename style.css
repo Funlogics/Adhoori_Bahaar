@@ -372,6 +372,40 @@ a {
   margin-bottom: 5px;
 }
 
+.about_us {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  padding: 6.25rem 4.6875rem;
+}
+
+.about_us .left-aside {
+  display: flex;
+  width: 50%;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_us .left-aside .heading-wrapper {
+  gap: 2rem;
+}
+
+.about_us .left-aside .description {
+  gap: 1.35rem;
+}
+
+.about_us .left-aside .description p {
+  font-size: 20px;
+}
+
+.about_us .right-aside {
+  width: 50%;
+  background: url(logo1_without_shadow.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .choose-test {
   background-color: #000;
   flex-direction: column;
@@ -630,6 +664,23 @@ a {
   animation-delay: 0.5s; /* Delay to stagger the animation */
 }
 
+.NumberQuiz {
+  color: #fff;
+  padding-left: 4.6875rem;
+  padding-right: 4.6875rem;
+  background: url(./background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.NumberQuiz .QuestionContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
 @media (max-width: 768px) {
   /* Add your responsive styles here */
 }
@@ -814,7 +865,6 @@ a {
     gap: 0.75rem;
   }
 
-
   .Shapequiz {
     gap: 2rem;
   }
@@ -827,35 +877,77 @@ a {
   }
 
   .Shapequiz .QuestionContainer {
-   width: 100%;
-   gap: 1rem;
-   padding: 0 1rem;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 1rem;
   }
-  .Shapequiz .QuestionContainer h2{
+  .Shapequiz .QuestionContainer h2 {
     width: 100%;
   }
-  .Shapequiz .QuestionContainer .ImgQuestion{
+  .Shapequiz .QuestionContainer .ImgQuestion {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
   }
 
+  .Shapequiz .AnswerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+  }
 
-.Shapequiz .AnswerContainer{
-  display: flex;
-  flex-direction: column;
-  padding: 0rem 1rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  align-self: stretch;
-}
+  .Shapequiz .AnswerContainer .option {
+    width: 100%;
+    padding: 0.75rem 0.25rem;
+  }
 
-.Shapequiz .AnswerContainer .option {
-  width: 100%;
-  padding: 0.75rem .25rem;
-}
+  .NumberQuiz {
+    padding: 0 1rem;
+  }
+  .NumberQuiz .QuestionContainer {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .about_us {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+  }
   
+  .about_us .left-aside {
+    display: flex;
+    width: 50%;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about_us .left-aside .heading-wrapper {
+    gap: 2rem;
+  }
+  
+  .about_us .left-aside .description {
+    gap: 1.35rem;
+  }
+  
+  .about_us .left-aside .description p {
+    font-size: 20px;
+  }
+  
+  .about_us .right-aside {
+    width: 50%;
+    background: url(logo1_without_shadow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   
 }
 
