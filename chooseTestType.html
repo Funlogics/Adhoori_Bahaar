@@ -254,7 +254,7 @@
 
 
 
-        <div class="btn-secondary-cta" id="back_btn">
+        <a class="btn-secondary-cta" id="back_btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008"
                     stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
@@ -262,7 +262,7 @@
             </svg>
             <p>Back to Home</p>
 
-        </div>
+        </a>
 
 
 
@@ -328,7 +328,7 @@
         </div>
 
 
-        <button id="next-btn" class="btn-primary-cta mt-5">Continue</button>
+        <a id="next-btn" class="btn-primary-cta mt-5">Continue</a>
 
 
         <script>
@@ -338,15 +338,6 @@
             var clickedTime = -1;
 
 
-            next_button.onclick = function () {
-                if (clickedTime === 0) {
-                    location.href = "/shape_steps.html";
-                } else {
-                    location.href = "/number_steps.html";
-                }
-            };
-
-
 
             child1.onclick = function () {
                 child1.classList.toggle('clicked')
@@ -354,6 +345,7 @@
                 child2.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
                 child2.classList.remove('clicked')
                 clickedTime = 0 
+                next_button.href = "/shape_steps.html"
             }
 
             child2.onclick = function () {
@@ -362,6 +354,8 @@
                 child1.classList.remove('clicked')
                 child1.style.cssText = "transition: 0.5s all;background: white; color:#000; box-shadow: rgba(255, 255, 255, 0.0) 0px 7px 29px 0px;"
                 clickedTime = 1 
+                next_button.href = "/number_steps.html"
+
             }
 
 
